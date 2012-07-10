@@ -1,0 +1,17 @@
+Source: retroarch
+Section: games
+Priority: extra
+Maintainer: Tom Parker <palfrey@tevp.net>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, libsdl-dev | libsdl-1.2.dev, libsdl-image-dev | libsdl-image1.2-dev, libavformat-dev, libavutil-dev (>= 6:0.8.3-4), libswscale-dev, nvidia-cg-dev
+Standards-Version: 3.9.2
+Homepage: http://themaister.net/retroarch.html
+Vcs-Git: git://github.com/Themaister/RetroArch.git
+Vcs-Browser: https://github.com/Themaister/RetroArch
+
+Package: retroarch
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: RetroArch (formerly known as SSNES) is a simple frontend for the libretro API
+ RetroArch (formerly known as SSNES) is a simple frontend for the libretro API. An API that attempts to generalize
+ a retro gaming system, such as SNES, NES, GameBoy, Arcade machines, etc.
+ Emulator/game cores are instantiated as loadable plugins.
